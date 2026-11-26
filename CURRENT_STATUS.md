@@ -10,3 +10,7 @@ Terakhir diperbarui: 2026-11-26 (BELUM diuji: tanpa akses npm; CI GitHub akan me
 
 ## Belum
 Dialog pembuatan proyek, halaman detail proyek, builder, alur responden, musik, /login, dialog/dropdown profil.
+
+## Pembaruan: mode GitHub Pages
+- Ekspor statis, middleware dihapus, URL /id dan /en, workflow `pages.yml`. Belum diuji; CI GitHub adalah uji pertama.
+- Tautan proyek di dashboard dinonaktifkan sampai halaman detail proyek dibuat.

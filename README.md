@@ -36,3 +36,8 @@ Bahasa: Indonesia default (tanpa prefix), Inggris di `/en/...`.
 1. Push repo ke GitHub. Tab **Actions** otomatis menjalankan typecheck, lint, dan build (`.github/workflows/ci.yml`).
 2. Klik **Code → Codespaces → Create codespace**. Dependensi terpasang otomatis; jalankan `npm run dev` lalu buka port 3000.
 3. Alternatif: impor repo ke Vercel untuk tautan publik.
+
+## Deploy ke GitHub Pages (situs statis)
+Aplikasi diekspor statis (`output: "export"`). Workflow `.github/workflows/pages.yml` membangun dan men-deploy setiap push ke `main`.
+Setel **Settings → Pages → Source = GitHub Actions**. URL: `https://<user>.github.io/Form-Skripsi/` (otomatis menuju `/id/`).
+Jika nama repo berbeda, ubah `NEXT_PUBLIC_BASE_PATH` di `pages.yml`. Untuk lokal, tidak perlu mengisi variabel itu.
